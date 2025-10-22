@@ -65,7 +65,7 @@ return (<PracticeWrapper id="services"><Container className='my-5'>
               <Card style={{border:'none'}}>
               <Card.Img variant="top" src={portfolio_4} />
               <Card.Body>
-                <Card.Title>{'Услуги кредитного блоккера'.toUpperCase()}</Card.Title>
+                <Card.Title>{'Услуги кредитного брокера'.toUpperCase()}</Card.Title>
               </Card.Body>
             </Card>
             </Col>
