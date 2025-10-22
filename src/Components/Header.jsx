@@ -106,24 +106,52 @@ export default function Header({setShowModal}){
         <WrapContainer fluid>
         <Row className='pb-3 pt-3 ps-5 align-items-center'>
         <Col md={8} sm={10}>
-            <a href="tel:+77786218134" className="nav_a" onClick={() => window.fbq?.('track', 'Contact')}>
-  		<img className='ms-3' src={tel} />
-  		<span className="mx-3">+7 778 621 8134</span>
-	    </a>
-            {!isMobile ? <span>|</span> : <br />}
-            <a href="mailto:k.zh.80@bk.ru" className="nav_a"><img className='ms-3' src={mail}/>
-            <span className="mx-3">k.zh.80@bk.ru</span></a>
-            {!isMobile ? <span>|</span> : <br />}
-            
-            <a href="https://www.instagram.com/biznes_kredit_mbba?igsh=MW1hNmtlZm9wYjZrcw==" target="_blank" className="nav_a">
+            <table className={!isMobile?"float-start":""}>
+            <tr>
+            <td>
+            <a href="tel:+77712306668" className="nav_a" onClick={() => window.fbq?.('track', 'Contact')}>
+                <img className='ms-3' src={tel} />
+                <span className="mx-3">+7 771 230 6668</span>
+            </a>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <a href="tel:+77057771708" className="nav_a" onClick={() => window.fbq?.('track', 'Contact')}>
+                <img className='ms-3' src={tel} />
+                <span className="mx-3">+7 705 777 1708</span>
+            </a>
+            </td>
+            </tr>
+            </table>
+
+            <a href="mailto:k.zh.80@bk.ru" className={!isMobile?"nav_a d-block float-start":"d-block nav_a"}>
+                <img className='ms-3' src={mail}/>
+                <span className="mx-3">k.zh.80@bk.ru</span>
+            </a>
+ 
+            <a href="https://www.instagram.com/biznes_kredit_mbba?igsh=MW1hNmtlZm9wYjZrcw==" target="_blank" className={!isMobile?"nav_a d-block float-start":"d-block nav_a"}>
                 <img className='ms-3' src={inst}/>
                 <span className="mx-3">biznes_kredit_mbba</span>
             </a>
-            {!isMobile ? <span>|</span> : <br />}
-            <a href="https://wa.me/77784985631?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..." target="_blank" className="nav_a"onClick={() => window.fbq?.('track', 'Contact')}>
+            <table className={!isMobile?"float-start":""}>
+            <tr>
+            <td>
+            <a href="https://wa.me/77786218134?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..." target="_blank" className="nav_a d-block" onClick={() => window.fbq?.('track', 'Contact')}>
+                <img className='ms-3' src={wats}/>
+                <span className="mx-3">+7 778 621 8134</span>
+            </a>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <a href="https://wa.me/77784985631?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..." target="_blank" className="nav_a d-block" onClick={() => window.fbq?.('track', 'Contact')}>
                 <img className='ms-3' src={wats}/>
                 <span className="mx-3">+7 778 498 5631</span>
             </a>
+            </td>
+            </tr>
+            </table>
         </Col>
         <Col md={4} sm={2} className="wrap_contact_us">
             <ContackUs
